@@ -6,7 +6,7 @@ from math import isclose
 @pytest.mark.xfail
 @pytest.mark.parametrize("a", [1,2,3])
 @pytest.mark.parametrize("b", [2,5,3])
-def test_sums():
+def test_sums(a,b):
 	assert a + b < a
 
 @pytest.mark.parametrize(
