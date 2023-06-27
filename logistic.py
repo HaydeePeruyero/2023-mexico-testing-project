@@ -13,3 +13,7 @@ def iterate_f(it, xi, r):
 		xs.append(x)
 	
 	return np.array(xs)
+	
+def random_generator(SEED):
+	random_state = np.random.RandomState(SEED)
+	return random_state.rand()
