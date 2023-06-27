@@ -19,14 +19,13 @@ def test_logistic(x,r, expected):
 	assert isclose(results, expected)
 	
 
+SEED = np.random.randint(0, 2**31)
 
-
-@pytest.fixture
-def random_state():
-	SEED = np.random.randint(0, 2**31)
-	print(f'Using sedd {SEED}')
-	rs = np.random.RandomState(SEED)
-	return rs
+#@pytest.fixture
+#def random_state():
+#	print(f'Using sedd {SEED}')
+#	rs = np.random.RandomState(SEED)
+#	return rs
 
 
 def test_converge(random_state):
